@@ -1,0 +1,23 @@
+module.exports = {
+  arrowParens: "avoid",
+  bracketSameLine: true,
+  bracketSpacing: true,
+  plugins: ["@ianvs/prettier-plugin-sort-imports"],
+  importOrder: [
+    "^react$",
+    "^react-native$",
+    "^expo",
+    "@supabase/supabase-js",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/(.*)$",
+    "",
+    "^[./]",
+    "",
+    "^[../]",
+  ],
+  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
+  importOrderTypeScriptVersion: "5.0.0",
+  tabWidth: 2,
+  trailingComma: "all",
+};

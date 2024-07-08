@@ -1,0 +1,40 @@
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  strong {
+    @apply font-bold text-primary-ui;
+  }
+
+  .bg-primary-surface {
+    h1,
+    h2,
+    h3,
+    p {
+      @apply text-primary-base;
+    }
+
+    strong {
+      @apply text-primary-ui;
+    }
+  }
+
+  .bg-secondary-surface {
+    h1,
+    h2,
+    h3,
+    p {
+      @apply text-secondary-base;
+    }
+
+    strong {
+      @apply text-secondary-ui;
+    }
+  }
+}
